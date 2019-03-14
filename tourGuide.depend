@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1524751237 source:c:\users\董家顺\desktop\tourguide\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	"model.h"
+	"tool.h"
+	"palace.h"
+	"user.h"
+
+1524570553 c:\users\董家顺\desktop\tourguide\model.h
+
+1524753334 c:\users\董家顺\desktop\tourguide\tool.h
+
+1524753238 c:\users\董家顺\desktop\tourguide\palace.h
+
+1524751205 c:\users\董家顺\desktop\tourguide\user.h
+
+1526910768 source:c:\users\董家顺\desktop\新建文件夹\tourguide\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	"model.h"
+	"tool.h"
+	"palace.h"
+	"user.h"
+
+1525428504 c:\users\董家顺\desktop\新建文件夹\tourguide\model.h
+
+1526884818 c:\users\董家顺\desktop\新建文件夹\tourguide\tool.h
+
+1526911390 c:\users\董家顺\desktop\新建文件夹\tourguide\palace.h
+
+1526884790 c:\users\董家顺\desktop\新建文件夹\tourguide\user.h
+
+1526910770 source:c:\users\董家顺\desktop\新建文件夹\tourguide1.0\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	"model.h"
+	"tool.h"
+	"palace.h"
+	"user.h"
+
+1525428506 c:\users\董家顺\desktop\新建文件夹\tourguide1.0\model.h
+
+1526884820 c:\users\董家顺\desktop\新建文件夹\tourguide1.0\tool.h
+
+1526918634 c:\users\董家顺\desktop\新建文件夹\tourguide1.0\palace.h
+
+1526884792 c:\users\董家顺\desktop\新建文件夹\tourguide1.0\user.h
+

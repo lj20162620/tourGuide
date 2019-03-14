@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
+#include <string.h>
+#include <windows.h>
+#include "model.h"
+#include "tool.h"
+#include "palace.h"
+#include "user.h"
+
+/****************用户ID11，pw11*****************/
+/****************管理员ID22，pw22*****************/
+            int mainMenu();             //系统主界面
+            void gotox(int x);          //调往第几行
+            void showtime(int k);       //时间调用
+            void addPalaceNode();       //增加景点信息
+            void printPalace();         //输出所有景点信息
+            int deletePalace();         //删除景点
+            void search1();             //查询目标景点最优路线
+            void search2();             //查询到所有景点最优路线
+            void printCurrentPalace(); //输出当前景点信息
+
+
+int main()
+{
+    int c=2;
+    user a;
+    while(c!=-1){
+        c=mainMenu();
+        switch(c){
+            case 0:registe();
+            case 1:a=login();
+                    enterSystem(a.role,a.userId);
+                    break;
+            case -1:showtime(1);
+                    exit(1);
+        }
+    }
+    return 0;
+}
+
+/****************智能推荐路线******************/
+void recommend(user userArray[],int index){
+    int i;
+    int max[3] = {0};
+    palace palaceArray[M];
+    int palaceTotal;
+ 
+    palaceTotal = readPalaceFromFile(palaceArray,"palace.dat");
+    system("cls");    //清除屏幕
+    showtime(0);
+    printCurrentPalace(); //输出当前景点信息
+    
+    for(i = 0;i<M;i++){
+        if(userArray[index].save[i]>max[2] && userArray[index].save[i]=<max[1]){
+            max[2] = userArray[index].
+        }
+        else if(userArray[index].save[i]>max[1] && userArray[index].save[i]=<max[0]){
+            max[1] = userArray[index].save[i];
+        }
+        else if(userArray[index].save[i]>max[0]){
+            max[0] = userArray[index].save[i];
+        }
+    }
+    gotox(6);
+    for(i = 0;i<3;i++){
+        printf("\t\t\t    景点序号：%d\n",i+1);
+        printf("\t\t\t    景点名称：%s\n",palaceArray[i].name);
+        printf("\t\t\t    景点信息：%s\n",palaceArray[i].descr);
+        if(palaceArray[i].status == 1)
+            printf("\t\t\t    状态：开放中");
+        gotox(6);
+    }
+}

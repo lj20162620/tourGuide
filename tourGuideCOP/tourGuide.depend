@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1524751237 source:c:\users\∂≠º“À≥\desktop\tourguide\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+	"model.h"
+	"tool.h"
+	"palace.h"
+	"user.h"
+
+1524570553 c:\users\∂≠º“À≥\desktop\tourguide\model.h
+
+1524753334 c:\users\∂≠º“À≥\desktop\tourguide\tool.h
+
+1524753238 c:\users\∂≠º“À≥\desktop\tourguide\palace.h
+
+1524751205 c:\users\∂≠º“À≥\desktop\tourguide\user.h
+
